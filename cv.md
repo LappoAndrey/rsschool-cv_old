@@ -1,9 +1,13 @@
 # ANDREY LAPPO
 
-**Phone:**   +375 29 697 24 48 
+**Phone:**   +375 29 697 24 48
+ 
 **Email:**     <lappoAdy@gmail.com>
+
 **Skype:**     silent5127
+
 **[Linkedin](https://www.linkedin.com/in/andrey-lappo-425763138/)** 
+
 ![myPhoto](https://i.ibb.co/rmfYX86/photo.jpg)
 
 	      	
@@ -112,7 +116,7 @@ Professional interests:
 **Lead Software Engineer at EPAM Systems
 June 18, 2021, Mikita was Andrey’s teacher**
 
->>Andrey was student at ITAcademy (Python training course), and I have a good impression of him. Andrey properly learned all materials and completed all tasks in a timely manner, and in general is very responsible. He is very thoughtful person, who would ask interesting and relevant questions in order to understand new material. Andrey has a good grasp of practical usage of Django framework, and I would like to specifically highlight his skill and knowledge in area of working with relational databases (postgre and sqlite). He is also good in communication with his colleagues and clients, not hesitant to take initiative and help someone when needed.
+>Andrey was student at ITAcademy (Python training course), and I have a good impression of him. Andrey properly learned all materials and completed all tasks in a timely manner, and in general is very responsible. He is very thoughtful person, who would ask interesting and relevant questions in order to understand new material. Andrey has a good grasp of practical usage of Django framework, and I would like to specifically highlight his skill and knowledge in area of working with relational databases (postgre and sqlite). He is also good in communication with his colleagues and clients, not hesitant to take initiative and help someone when needed.
 
 ## Code example:
 
