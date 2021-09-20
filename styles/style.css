@@ -370,6 +370,7 @@
             position: relative;
             z-index: 4;
             margin-top: 27px;
+            cursor: pointer;
         }
         .header__burger span{
             position: absolute;
