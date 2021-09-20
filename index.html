@@ -22,7 +22,7 @@
             <header class="centring">
 
             <div class="fix_header">
-                <div class="header__body ">
+                <div class="header__body" onclick="toggleMenuIcon()">
                     <div class="header__burger">
                         <span></span>
                     </div>
@@ -225,7 +225,7 @@
                     <aside>Lead Software Engineer at EPAM Systems</aside>
                     <aside>June 18, 2021, Mikita was Andrey’s teacher</aside>
                     <br>
-                    <article class="paragraph">Andrey was student at ITAcademy (Python training course), and I have a good impression of him. Andrey properly learned all materials and completed all tasks in a timely manner, and in general is very responsible. He is very thoughtful person, who would ask interesting and relevant questions in order to understand new material. Andrey has a good grasp of practical usage of Django framework, and I would like to specifically highlight his skill and knowledge in area of working with relational databases (postgre and sqlite). He is also good in communication with his colleagues and clients, not hesitant to take initiative and help someone when needed.</article>
+                    <p class="paragraph">Andrey was student at ITAcademy (Python training course), and I have a good impression of him. Andrey properly learned all materials and completed all tasks in a timely manner, and in general is very responsible. He is very thoughtful person, who would ask interesting and relevant questions in order to understand new material. Andrey has a good grasp of practical usage of Django framework, and I would like to specifically highlight his skill and knowledge in area of working with relational databases (postgre and sqlite). He is also good in communication with his colleagues and clients, not hesitant to take initiative and help someone when needed.</p>
                 </div>
             </div>
     
@@ -271,61 +271,24 @@
                 <h2>Code Example</h2>
                 <details>
                     <summary>
-                        <b>Vigenere cipher</b>
+                        <b>Carbon dating</b>
                     </summary>
                     <pre>
                         <code class="javascript">
-                            export default class VigenereCipheringstrachine {
-        
-                                constructor(isDirect) {
-                                    if (isDirect == false)
-                                        this.reverse = true;
-                                    }
-                                    
-                                encrypt(m, k) {
-                                    if(!m || !k) {
-                                        throw new Error('Incorrect arguments!');
-                                    }
-                                        const a = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                                        m = m.toUpperCase();
-                                        k = k.toUpperCase();
-                                        let r = '';	
-                                        let j = 0;
-                                        for(let i=0; i<m.length; i++){
-                                            if(a.includes(m[i])) { 			
-                                                let mi = a.indexOf(m[i]);
-                                                let ki_s = k[(j >= k.length) ? (j % k.length) : j];
-                                                let ki = a.indexOf( ki_s );
-                                                let c = a[(mi + ki) % 26];			
-                                                r += c;	
-                                                j++;}
-                                            else r += m[i];															
-                                        }
-                                        return this.reverse ? r.split('').reverse().join('') : r;
-                                    };
-                                
-                                decrypt(m, k) {
-                                    if(!m || !k) {
-                                        throw new Error('Incorrect arguments!');
-                                    }
-                                        let a = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                                        m = m.toUpperCase();
-                                        k = k.toUpperCase();
-                                        let r = '';	
-                                        let j = 0;
-                                        for(let i=0; i<m.length; i++){
-                                            if(a.includes(m[i])) { 			
-                                                let mi = a.indexOf(m[i]);
-                                                let ki_s = k[(j >= k.length) ? (j % k.length) : j];
-                                                let ki = a.indexOf( ki_s );
-                                                let c = a[(26 + mi - ki) % 26]; 			
-                                                r += c;	
-                                                j++;}
-                                            else r += m[i];															
-                                        }
-                                        return this.reverse ? r.split('').reverse().join('') : r;
-                                    };
-                                };
+                            export default function dateSample( sampleActivity ) {
+                                let res=0;
+                                if (Math.sign(sampleActivity) != '1' || typeof(sampleActivity) != "string"){
+                                  return false;
+                                } 
+                                else {
+                                  if (sampleActivity > 0 && sampleActivity &lt; 15.1){
+                                    res = Math.ceil((Math.log(MODERN_ACTIVITY/sampleActivity))/(0.693/HALF_LIFE_PERIOD));
+                                    return res;
+                                  } else {
+                                    return false;
+                                  }
+                                }
+                              };
                             </code>
                         </pre>
                 </details>
@@ -363,9 +326,7 @@
     
 </footer>
 
-	<!--Подключаем jQuery-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <!--Подключаем файл JS скриптов-->
+	
 	<script src="js/script.js"></script>
 </body>
 
